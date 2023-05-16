@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="./script.js"></script>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .centered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40vh;
+    }
+
+    button,
+    a {
+        padding: 15px;
+        margin: 10px;
+        outline: none;
+        color: white;
+        background: linear-gradient(navy, blue);
+        border: 2px solid navy;
+        border-radius: 10px;
+
+    }
+
+    button:hover,
+    a:hover {
+        color: navy;
+        background: white;
+        border: 2px solid navy;
+        transition: 0.25s;
+        font-weight: bold;
+    }
+
+    video {
+        border-radius: 10px;
+    }
+</style>
+<script>
+    function muncul5() {
+
+    }
+
+    function muncul() {
+
+        document.write(`<br><a href="./index2.html" style="padding: 15px; margin: 10px; outline: none; color: white;background: linear-gradient(navy, blue);  border: 2px solid navy; border-radius: 10px;text-decoration:none"> close video</a><br><br><br>
+        <center>
+            <video width="90%" height="auto" controls >
+                <source src="./aset/16.Smooth Camera Follow in Unity - Tutorial.mp4" type="video/mp4">
+                browser mu ga support video
+            </video>
+        </center>`);
+    }
+    function tutup() {
+        document.write('<button onclick="muncul()"> see video</button>')
+        document.write('<button onclick="muncul2()"> see Audio</button>')
+        document.write('<button onclick="muncul3()"> see Youtube</button>')
+        document.write('<button onclick="muncul4()"> see My web</button>')
+    }
+    function muncul2() {
+        document.write(`<br><a href="./index2.html" style="padding: 15px; margin: 10px; outline: none; color: white;background: linear-gradient(navy, blue);  border: 2px solid navy; border-radius: 10px;text-decoration:none"> close audio</a><br><br><br>
+        <audio controls>
+            <source src="./aset/Suara Hujan Dan Petir  Untuk Terapi Tidur Dan Relax.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>  `);
+    }
+    function muncul3() {
+        document.write(`<br><a href="./index2.html" style="padding: 15px; margin: 10px; outline: none; color: white;background: linear-gradient(navy, blue);  border: 2px solid navy; border-radius: 10px;text-decoration:none"> close youtube</a><br><br><br>
+        <iframe width="450" height="300" src="https://www.youtube.com/embed/D1FOPvcBIp8"></iframe> `);
+    }
+    function muncul4() {
+        document.write(`<br><a href="./index2.html" style="padding: 15px; margin: 10px; outline: none; color: white;background: linear-gradient(navy, blue);  border: 2px solid navy; border-radius: 10px;text-decoration:none"> close web</a><br><br><br>
+        <embed width="100%" height="90%" src="https://ordinalblog.netlify.app/">`);
+    }
+</script>
+
+<body>
+    <div class="container">
+        <div class="centered">
+            <script>
+                tutup();
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

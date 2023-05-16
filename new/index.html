@@ -1,0 +1,240 @@
+<html>
+
+<head>
+    <title>Tugas Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="judul">
+                <a href="index.html">MyBlog</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="../index.html">Kembali</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <h1>
+            Cara Membuat Kotak di HTML dengan CSS
+        </h1>
+        <article>
+            <h3>Persiapan</h3>
+            <p>sebelum membuat kotak di HTML hendaklah memulai dengan mempersiapkan hal berikut :</p>
+            <ul>
+                <li>
+                    <details>
+                        <summary>Teks Editor</summary>
+                        <p>anda bisa menggunakan teks editor seperti notepad++, Sublime Text, Visual Studio Code, Atom,
+                            dan
+                            lain lain</p>
+                    </details>
+                </li>
+
+                <li>
+                    <details>
+                        <summary> Browser </summary>
+                        <p>untuk browser harap menggunakan browser yang mensupport CSS seperti Google Chrome, Mozilla
+                            Firefox, Brave Browser, Dan lain lain</p>
+                    </details>
+                </li>
+
+            </ul>
+            <br>
+        </article>
+        <h3>
+            Eksekusi
+        </h3>
+        <p>Jika hal hal diatas <mark> sudah terpenuhi</mark> maka proses membuat kotak di HTML bisa dilanjutkan</p>
+        <ol>
+            <li> buatlah file <b>index.html</b> lalu tuliskan kode seperti berikut : </li>
+            <textarea cols="50" rows="13">
+                 <!DOCTYPE html>
+                    <html>
+                        
+                        <head>
+                            <title>Membuat Kotak by Raihan</title>
+                            <link rel="stylesheet" href="style.css"> // penghubung CSS Eksternal
+                        </head>
+                        
+                        <body>
+                            <div class="kotax"></div> // memanggil kelas kotax dari CSS
+                        </body>
+                    </html>
+                    </textarea>
+            <li> buat file CSS <b>style.css</b> lalu tuliskan kode seperti berikut : </li>
+            <textarea cols="50" rows="6">
+                        .kotax {
+                            width : 100px ; // untuk mengatur panjang kotak
+                            height : 100px ; // untuk mengatur lebar kotak
+                            background-color : red ; // untuk mengatur warna kotak
+                        }
+                    </textarea>
+
+        </ol>
+        <p>
+            pastikan source code sudah benar lalu buka browser untuk melihat hasil nya.
+        </p>
+        <figure>
+            <img src="./hasil.PNG" alt="hasil" width="50%" loading="lazy">
+            <figcaption>hasil kotak dari codingan diatas</figcaption>
+        </figure>
+
+        <p>Demikian sedikit penjelasan tentang <b>Cara Membuat Kotak di HTML dengan CSS</b>. Selamat mencoba dan semoga
+            bermanfaat</p>
+        <br><br>
+        <p>
+            Diposting Admin <time datetime="2023-04-04 10:40">Kemarin</time>
+        </p>
+    </section>
+    <br>
+    <section>
+        <h3>
+            Comment
+        </h3>
+        <h4>Add Comment : </h4>
+        <form action="" method="post">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" for="nama" placeholder="Nama Lengkap" required>
+            <label for="email">Alamat Email</label>
+            <input type="text" for="email" placeholder="Alamat Email" required>
+            <label for="comment">Komentar</label>
+            <textarea name="comment" rows="3"></textarea>
+
+            <button>Posting Komentar</button>
+        </form>
+    </section>
+
+    <section>
+        <svg width="100%" height="35">
+            <rect width="9999999" height="10" fill="white" />
+            Browser mu gak support SVG
+        </svg>
+        <h2 style="text-align: center;">Konten ini dipublikasikan di beberapa negara seperti : </h2>
+        <br>
+        <canvas id="indo" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+        <canvas id="engl" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+        <canvas id="denm" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+        <canvas id="swis" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+        <canvas id="cc" width="200" height="100" style="border:1px solid #000000;"></canvas>
+
+        <canvas id="norwey" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" fill="white" />
+        </svg><br>
+        <svg width="100%" height="35">
+            <rect width="9999999" height="10" fill="white" />
+            Browser mu gak support SVG
+        </svg>
+    </section>
+    <script>
+        var indonesia = document.getElementById("indo");
+        var ctx = indonesia.getContext("2d");
+        var ctx2 = indonesia.getContext("2d");
+
+        ctx.fillStyle = "aliceblue";
+        ctx.fillRect(0, 0, 200, 100);
+        ctx.fillStyle = "red";
+        ctx.fillRect(0, 0, 200, 50);
+
+        var denmark = document.getElementById("denm");
+        var ctx1 = denmark.getContext("2d");
+        var ctx2 = denmark.getContext("2d");
+        var ctx3 = denmark.getContext("2d");
+        var ctx4 = denmark.getContext("2d");
+        ctx1.fillStyle = "red";
+        ctx1.fillRect(0, 0, 200, 40);
+        ctx2.fillStyle = "aliceblue";
+        ctx2.fillRect(0, 40, 200, 20);
+        ctx3.fillStyle = "red";
+        ctx3.fillRect(0, 60, 200, 40);
+        ctx4.fillStyle = "aliceblue";
+        ctx4.fillRect(50, 0, 20, 100);
+
+
+
+        var england = document.getElementById("engl");
+        var ctx1 = england.getContext("2d");
+        var ctx2 = england.getContext("2d");
+        var ctx3 = england.getContext("2d");
+        var ctx4 = england.getContext("2d");
+        ctx1.fillStyle = "aliceblue";
+        ctx1.fillRect(0, 0, 200, 40);
+        ctx2.fillStyle = "red";
+        ctx2.fillRect(0, 40, 200, 20);
+        ctx3.fillStyle = "aliceblue";
+        ctx3.fillRect(0, 60, 200, 40);
+        ctx4.fillStyle = "red";
+        ctx4.fillRect(90, 0, 20, 100);
+
+        var swiss = document.getElementById("swis");
+        var ctx1 = swiss.getContext("2d");
+        var ctx2 = swiss.getContext("2d");
+        var ctx3 = swiss.getContext("2d");
+        var ctx4 = swiss.getContext("2d");
+        ctx1.fillStyle = "red";
+        ctx1.fillRect(0, 0, 200, 100);
+        ctx2.fillStyle = "aliceblue";
+        ctx2.fillRect(50, 35, 90, 30);
+
+        ctx4.fillStyle = "aliceblue";
+        ctx4.fillRect(80, 10, 30, 80);
+
+
+        var costarica = document.getElementById("cc");
+        var ctx1 = costarica.getContext("2d");
+        var ctx2 = costarica.getContext("2d");
+        var ctx3 = costarica.getContext("2d");
+        var ctx4 = costarica.getContext("2d");
+        ctx1.fillStyle = "navy";
+        ctx1.fillRect(0, 0, 200, 100);
+        ctx2.fillStyle = "aliceblue";
+        ctx2.fillRect(0, 15, 200, 70);
+
+        ctx4.fillStyle = "red";
+        ctx4.fillRect(0, 33, 200, 35);
+
+        var norwegia = document.getElementById("norwey");
+        var ctx1 = norwegia.getContext("2d");
+        var ctx2 = norwegia.getContext("2d");
+        var ctx3 = norwegia.getContext("2d");
+        var ctx4 = norwegia.getContext("2d");
+        var ctx5 = norwegia.getContext("2d");
+
+
+        ctx1.fillStyle = "red";
+        ctx1.fillRect(0, 0, 200, 100);
+        ctx2.fillStyle = "aliceblue";
+        ctx2.fillRect(0, 35, 200, 30);
+
+        ctx3.fillStyle = "aliceblue";
+        ctx3.fillRect(50, 0, 30, 100);
+        ctx5.fillStyle = "navy";
+        ctx5.fillRect(56, 0, 18, 100);
+        ctx4.fillStyle = "navy";
+        ctx4.fillRect(0, 41, 200, 18);
+    </script>
+    <section>
+        <center>
+            <h3>Halaman lain </h3>
+            <iframe src="./index2.html" frameborder="0" width="75%" height="75%"></iframe>
+        </center>
+    </section>
+    <footer>
+        <section style="text-align: center;">
+            <h4>Copyright &copy; Raihan Rivana Putra</h4>
+            <p> Pengkopasan bisa terkena tindak pidana Hukuman mati</p>
+        </section>
+    </footer>
+</body>
+
+
+</html>

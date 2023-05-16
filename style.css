@@ -1,0 +1,115 @@
+:root {
+    --text-color1: rgb(0, 89, 255);
+    --text-color2: black;
+    --text-color3: darkblue;
+    --text-color4: white;
+}
+
+
+
+nav {
+    font-family: arial;
+    display: flex;
+    background-color: transparent;
+}
+
+body {
+    background: url(./img/595000.jpg);
+    background-size: cover;
+}
+
+.nav-li {
+    position: relative;
+    list-style: none;
+}
+
+.isi-nav {
+    color: var(--text-color4);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.isi-nav:hover {
+    color: var(--text-color1);
+}
+
+.hero {
+    color: var(--text-color4);
+    text-align: center;
+    font-family: helvetica;
+    /* padding: 15px; */
+    margin-top: 100px;
+    text-shadow: 2px 1.5px 1px var(--text-color1);
+}
+
+h1 {
+    color: var(--text-color4);
+    cursor: not-allowed;
+}
+
+.hero-profile {
+    background-color: rgba(59, 59, 59, 0.212);
+    backdrop-filter: blur(5px);
+    display: flex;
+    margin-top: 80px;
+    width: 80%;
+    transform: translate(10%);
+    height: auto;
+    border: 1px solid var(--text-color1);
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+.hero-contact {
+    background-color: rgba(59, 59, 59, 0.212);
+    backdrop-filter: blur(5px);
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 80%;
+    transform: translate(10%);
+    height: auto;
+    border: 1px solid var(--text-color1);
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border: 10px solid var(--text-color1);
+}
+
+.profil {
+    margin-left: 100px;
+    margin-top: 25px;
+    font-family: arial;
+
+}
+
+.profil,
+h1 {
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.profil h3 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+td {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+caption {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
