@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .btn {
+            float: right;
+            margin-top: -25px;
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+    </style>
+    <script>
+        function login() {
+            document.getElementById('login').innerHTML = `<center>
+            <div style="width: 100%;position: absolute;height: auto;padding-bottom: 100px;">
+                <div style="background: rgba(0, 0, 0, 0.500);width: 50%;padding: 10px;backdrop-filter: blur(10px);">
+                    <h1>Login</h1>
+                    <p>masukan username dan password</p>
+                    <input type="text" id="username" style="padding: 5px;width: 35%;" placeholder="username"
+                        onchange="username()">
+                    <br><br>
+                    <input type="text" id="password" style="padding: 5px;width: 35%;" placeholder="password"
+                        onkeyup="password()" onkeydown="password2()">
+                    <br><br>
+                    <button onclick="sapa()" style="padding: 10px;padding-left: 30px;padding-right: 30px;background-color: transparent;color: white;border: 2px solid white;border-radius: 20px;">login</button>
+                    <button onclick="location.reload();" style="padding: 10px;padding-left: 30px;padding-right: 30px;background-color: transparent;color: crimson;border: 2px solid crimson;border-radius: 20px;">kembali</button>
+                </div>
+                </div>
+            </div>
+        </center>`;
+        }
+        function username() {
+            var hmm = document.getElementById('username');
+            hmm.value = hmm.value.toUpperCase();
+        }
+        function password() {
+            var hmm = document.getElementById('password');
+            hmm.style.color = 'red'
+        }
+        function password2() {
+            var hmm = document.getElementById('password');
+            hmm.style.color = 'green';
+        }
+        function sapa() {
+            let hmm = document.getElementById('username');
+            if (hmm.value === '') {
+                alert("isi data dahulu")
+            } else {
+                alert("halo " + hmm.value)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav width="100%">
+        <ul>
+            <li class="nav-li">
+                <a href="./index.html" class="isi-nav">Home</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="nav-li">
+                <a href="./profile.html" class="isi-nav">Profile</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="nav-li">
+                <a href="./contact.html" class="isi-nav">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <button class="btn" onclick="login()">Login</button>
+
+    <div id="login"></div>
+    <div class="hero">
+        <!-- <h1>Selamat Datang!</h1><br> -->
+        <h1>Artikel terbaru</h1>
+
+    </div>
+
+</body>
+
+</html>
